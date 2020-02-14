@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the sport</title>
+</head>
+<body>
+    <div class="container">
+		<section id="header">
+			<h1>Guess the sport</h1>
+			<img id="sports" src="./images/sports.jpg" alt="Sport">
+			<p id="saying"> Work hard, play harder!</p>
+        </section>
+        <section id="game-board">
+            <p id="startGame"></p>
+            <div id="wordInPlay" class="letters"></div>
+            <p>Letters Already Guessed</p>
+            <div id="wrongGuess" class="letters"></div>
+        </section>
+    </div>
+	<audio id="wordInFullAudio" preload="true">
+	    <source src="assets/audio/TheStarSpangledBanner_BandOnly.mp3" type="winningAudio">
+    </audio>
+    <audio id="wrongLetterAudio" preload="true">
+	    <source src="assets/audio/fail-trombone-01.mp3" type="wrongAudio">
+	</audio>
+    <script src="./main.js"></script>
+</body>
+</html>
