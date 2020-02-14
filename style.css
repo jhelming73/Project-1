@@ -45,7 +45,7 @@ body {
 	margin: 0 0 1em 0;
 }
 
-#current-word, #failed-guesses {
+#wordInPlay, #wrongGuess {
 	font-size: 1.5em;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 	line-height: 1.3;
