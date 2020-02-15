@@ -53,7 +53,11 @@ small {
 	margin: 0 0 1em 0;
 } */
 
-#wordInPlay, #wrongGuess {
+#wordInPlay {
+	font-size: 2em;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+ #wrongGuess {
 	font-size: 1.5em;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
