@@ -8,7 +8,7 @@ let guessCountElement = document.querySelector('#guessCount')
 
 let sportsToGuess = ["football", "basketball", "soccer", "golf", "tennis", "vollyball", "baseball"]
 
-let randomSport = sportsToGuess[Math.floor(Math.random() * sportsToGuess.length)].toUpperCase();
+let randomSport = sportsToGuess[Math.floor(Math.random() * sportsToGuess.length)];
 
 let allLetterGuesses = [];
 const maxGuessAttempts = 4;
@@ -21,7 +21,7 @@ function createSportGuessBoard() {
 	let guessSports = "";
 	for(let i = 0; i < randomSport.length; i++) {        
 		if(allLetterGuesses.indexOf(randomSport[i]) !== -1 || randomSport[i] === " ") {
-			guessSports += randomSport[i].toUpperCase();
+			guessSports += randomSport[i];
 		} else {
 			guessSports += "_";
 		}
