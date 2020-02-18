@@ -80,7 +80,7 @@ document.onkeydown = function(enterLetters) {
         let fullSportWord = document.querySelector("#wordInPlay").innerHTML;
             if (fullSportWord.indexOf("_") === -1) {
                 sportGuessed = true;
-                window.alert("Win!");
+                window.alert("Win! Please reload the page to play again.");
         }
 }
         
