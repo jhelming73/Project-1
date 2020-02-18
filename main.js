@@ -43,7 +43,7 @@ document.onkeydown = function(enterLetters) {
     let keyPressed = enterLetters.key;
 
 	if(keyCodePressed >= 65 && keyCodePressed <= 90 && allLetterGuesses.indexOf(keyPressed) === -1){
-        allLetterGuesses.push(keyPressed)//.toLowerCase();
+        allLetterGuesses.push(keyPressed)
         
 		if(randomSport.indexOf(keyPressed) === -1) {
 			letterGuessCount++;
@@ -57,7 +57,7 @@ document.onkeydown = function(enterLetters) {
                     //clearBoard();
                     randomSport = sportsToGuess[Math.floor(Math.random() * sportsToGuess.length)];
                     //Bring's up pop-up
-                    window.alert("Game Over")
+                    window.alert("Game Over. Please reload the page to play again.")
                //Shows number of guesses remaining:
                 } else { 
 
@@ -80,7 +80,9 @@ document.onkeydown = function(enterLetters) {
         let fullSportWord = document.querySelector("#wordInPlay").innerHTML;
             if (fullSportWord.indexOf("_") === -1) {
                 sportGuessed = true;
-                window.alert("Win! Please reload the page to play again.");
+                window.alert("You Won!",confetti());
+                // window.alert("Win! Please reload the page to play again.");
+                // confetti();
         }
 }
         
@@ -88,6 +90,6 @@ document.onkeydown = function(enterLetters) {
             // wordInFullAudio.currentTime = 0;
             // wordInFullAudio.play();
             sportGuessed= false;
-            randomSport = sportsToGuess[Math.floor(Math.random() * sportsToGuess.length)].toLowerCase();
+            randomSport = sportsToGuess[Math.floor(Math.random() * sportsToGuess.length)];
             createSportGuessBoard();
         }
