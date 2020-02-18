@@ -6,7 +6,7 @@ let wordInFullAudio = document.querySelector('#wordInFullAudio')
 let lettersGuessed = document.querySelector('#wrongGuess')
 let guessCountElement = document.querySelector('#guessCount')
 
-let sportsToGuess = ["football", "basketball", "soccer", "golf", "tennis", "vollyball", "baseball"]
+let sportsToGuess = ["football", "basketball", "soccer", "golf", "tennis", "volleyball", "baseball"]
 
 let randomSport = sportsToGuess[Math.floor(Math.random() * sportsToGuess.length)];
 

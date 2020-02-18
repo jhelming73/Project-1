@@ -42,7 +42,7 @@ small {
 
 #game-board {
 	flex: 0 0 800px;
-    background-color: red;
+    background-color:red;
 	color: #fff;
 	padding: 60px;
 	font-size: .8em;
