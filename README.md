@@ -1,13 +1,10 @@
 
 
+# Let's Play Hangman - The Sports Edition!
 
-#### Future Plans:
 
-- Authorization and confirmation of blood donation from hospitals and official authorities.
-- Add a map of the nearest portable blood bank.
-- Add rules and regulations for blood donation.
-- Add online test "Do i qualify to donate blood?".
-- Add date of last blood donation and a notification of when you're eligible to donate.
+## Instructions how to play:
+From the pieces of equipment pictured, review the number of missing letters to correctly guess the sport in question. Guess correctly, that letter is shown in the correct place on the word in question. Guess incorrectly, then that letter is shown under the "Letters Already Guessed" location. If you are able to guess the sport word in question - watch the confetti fly!
 
 ## Technologies Used in making this game:
 - **Command Line**: used for interacting with the computer, navigating the filesystem.
@@ -18,30 +15,32 @@
 - **Google Chrome Developer Tools**: used to debug and solve problems in the code
 
 
-## Requirements
-
 ### Technical Requirements
 
 The hangman game full-fill's the following requirements:
 
 - Renders in the browser ✔
-- Include separate HTML / CSS / JavaScript files ✔
-- Use Javascript for DOM manipulation ✔
+- Includes separate HTML / CSS / JavaScript files ✔
+- Uses Javascript for DOM manipulation ✔
 - Be deployed online, using [Github Project pages](https://pages.github.com)
   and/or to a custom domain. ✔
-- Use semantic markup for HTML and CSS (adhere to best practices) ✔
-- Show a good commit history with frequent commits ✔
-- A hosted copy of your game, built by you, hosted on Github Pages✔
+- Uses semantic markup for HTML and CSS (adhere to best practices) ✔
 - HTML/CSS passes the [HTML5 Validator](https://html5.validator.nu)✔
   and [CSS Validator](https://jigsaw.w3.org/css-validator/)✔
 - The git repository hosted on Github with frequent commits dating back to the
   very beginning of the project ✔
 
-### Necessary Deliverables
+### Approach Taken:
+ - I decided to go with a hangman version of guessing the of the sport equipment of the shown picture. 
+
+### Unsolved Problems:
+- Pop-up window on "Game Over" alert showing before last letter is populated in word to guess.
 
 
-## Instructions how to play:
-From the pieces of equipment pictured, review the number of missing letters to correctly guess the sport in question. Guess correctly, that letter is shown in the correct place on the word in question. Guess incorrectly, then that letter is shown under the "Letters Already Guessed" location. If you are able to guess the sport word in question - watch the confetti fly!
+#### Future Plans:
+
+- Add winning and loosing scoring logic.
+- Remove pop-up for displaying "Game Over".
 
 Play the game here from the Github repo:
-![https://jhelming73.github.io/Project-1/](https://jhelming73.github.io/Project-1/)
+![https://jhelming73.github.io/Project-1/]()
