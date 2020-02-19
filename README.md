@@ -43,5 +43,5 @@ The hangman game full-fill's the following requirements:
 ## Instructions how to play:
 From the pieces of equipment pictured, review the number of missing letters to correctly guess the sport in question. Guess correctly, that letter is shown in the correct place on the word in question. Guess incorrectly, then that letter is shown under the "Letters Already Guessed" location. If you are able to guess the sport word in question - watch the confetti fly!
 
-The URL section of your Github repo:
-![URL section](https://jhelming73.github.io/Project-1/)
+Play the game here from the Github repo:
+![https://jhelming73.github.io/Project-1/](https://jhelming73.github.io/Project-1/)
