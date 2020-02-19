@@ -80,8 +80,8 @@ function winCheck(){
     //if(guessesRemaining === 0)
     if(maxGuessAttempts === 0){
         //Bring's up pop-up
-     //window.alert("Game Over. Please select the Reset Board button to play again.")
-    gameStatusText.innerText = "Game Over"
+     window.alert("Game Over. Please select the Reset Board button to play again.")
+     gameStatusText.innerText = "Game Over. Try again!"
     //Shows number of guesses remaining:
     } else {
         guessCountRemaining.innerHTML = maxGuessAttempts;  
@@ -89,6 +89,7 @@ function winCheck(){
     let fullSportWord = document.querySelector("#wordInPlay").innerHTML;
     if (fullSportWord.indexOf("_") === -1) {
         var end = Date.now() + (15 * 1000);
+
         var interval = setInterval(function() {
             if (Date.now() > end) {
                 return clearInterval(interval);
@@ -96,7 +97,7 @@ function winCheck(){
                     confetti({
                         startVelocity: 30,
                         spread: 360,
-                        ticks: 60,
+                        ticks: 600,
                         shapes: ['square'],
                         origin: {
                             x: Math.random(),
@@ -116,7 +117,7 @@ function winCheck(){
         //       y: Math.random() - 0.2
         //     }
         //   });
-          gameStatusText.innerText = "Winna"
+          gameStatusText.innerText = "Winner!"
         //window.alert("You Won!");
         // window.alert("Win! Please reload the page to play again.");
         }
