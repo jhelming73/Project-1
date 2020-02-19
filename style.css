@@ -67,3 +67,8 @@ small {
 	font-size: 1.5em;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
+#gameStatus {
+	font-size: .5em;
+	margin-top: 25px;
+}

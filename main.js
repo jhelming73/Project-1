@@ -5,6 +5,7 @@ let wrongLetterAudio = document.querySelector('#wrongLetterAudio')
 let wordInFullAudio = document.querySelector('#wordInFullAudio')
 let lettersGuessed = document.querySelector('#wrongGuess')
 let guessCountElement = document.querySelector('#guessCount')
+let gameStatusText = document.querySelector('#gameStatus')
 
 let sportsToGuess = ["football", "basketball", "soccer", "golf", "tennis", "volleyball", "baseball"]
 
@@ -43,7 +44,7 @@ createSportGuessBoard();
 document.onkeydown = function(enterLetters) {
     let keyCodePressed = enterLetters.keyCode;
     let keyPressed = enterLetters.key;
-
+    //console.log(allLetterGuesses)
 	if(keyCodePressed >= 65 && keyCodePressed <= 90 && allLetterGuesses.indexOf(keyPressed) === -1){
         allLetterGuesses.push(keyPressed)
         
@@ -65,13 +66,12 @@ document.onkeydown = function(enterLetters) {
                         }
                     }
                     lettersGuessed.innerHTML = guessSport;
-                    console.log(guessSport)
                 }
 
         createSportGuessBoard();
         winCheck();
     }
-        console.log(correctLetters)
+        //console.log(correctLetters)
 	//guessesRemaining = maxGuessAttempts - letterGuessCount;
 
 
@@ -80,23 +80,43 @@ function winCheck(){
     //if(guessesRemaining === 0)
     if(maxGuessAttempts === 0){
         //Bring's up pop-up
-        window.alert("Game Over. Please select the Reset Board button to play again.")
+     //window.alert("Game Over. Please select the Reset Board button to play again.")
+    gameStatusText.innerText = "Game Over"
     //Shows number of guesses remaining:
     } else {
         guessCountRemaining.innerHTML = maxGuessAttempts;  
     }
     let fullSportWord = document.querySelector("#wordInPlay").innerHTML;
     if (fullSportWord.indexOf("_") === -1) {
-        confetti({
-            particleCount: 300,
-            startVelocity: 25,
-            spread: 360,
-            origin: {
-              x: Math.random(),
-              // since they fall down, start a bit higher than random
-              y: Math.random() - 0.2
+        var end = Date.now() + (15 * 1000);
+        var interval = setInterval(function() {
+            if (Date.now() > end) {
+                return clearInterval(interval);
             }
-          });
+                    confetti({
+                        startVelocity: 30,
+                        spread: 360,
+                        ticks: 60,
+                        shapes: ['square'],
+                        origin: {
+                            x: Math.random(),
+                            // since they fall down, start a bit higher than random
+                            y: Math.random() - 0.2
+                        }
+                    });
+                }, 200);
+    //Different confetti look:
+        // confetti({
+        //     particleCount: 300,
+        //     startVelocity: 25,
+        //     spread: 360,
+        //     origin: {
+        //       x: Math.random(),
+        //       // since they fall down, start a bit higher than random
+        //       y: Math.random() - 0.2
+        //     }
+        //   });
+          gameStatusText.innerText = "Winna"
         //window.alert("You Won!");
         // window.alert("Win! Please reload the page to play again.");
         }
