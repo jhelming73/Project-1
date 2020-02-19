@@ -11,10 +11,11 @@ let sportsToGuess = ["football", "basketball", "soccer", "golf", "tennis", "voll
 let randomSport = sportsToGuess[Math.floor(Math.random() * sportsToGuess.length)];
 
 let allLetterGuesses = [];
-const maxGuessAttempts = 4;
+let maxGuessAttempts = 4;
 let letterGuessCount = [];
 let guessCount = 0;
 let sportGuessed = false;
+let correctLetters = 0;
 
 //Add correct guess letters to current sport to guess
 function createSportGuessBoard() {
@@ -27,12 +28,13 @@ function createSportGuessBoard() {
 		}
     }
     wordInPlay.innerHTML = guessSports;
+    guessCountRemaining.innerHTML = maxGuessAttempts;
 }
 
 //New Game
-// function clearBoard() {
-   
-// }
+function resetBoard() {
+    location.reload()
+}
 
 createSportGuessBoard();
 
@@ -46,50 +48,57 @@ document.onkeydown = function(enterLetters) {
         allLetterGuesses.push(keyPressed)
         
 		if(randomSport.indexOf(keyPressed) === -1) {
-			letterGuessCount++;
-		    }
+            //letterGuessCount++;
+            maxGuessAttempts--;
+		    } else {
+                correctLetters++
+            }
     console.log(keyPressed)
     console.log(keyCodePressed)
 
-	guessesRemaining = maxGuessAttempts - letterGuessCount;
-
-                if(guessesRemaining === 0) {
-                    //clearBoard();
-                    randomSport = sportsToGuess[Math.floor(Math.random() * sportsToGuess.length)];
-                    //Bring's up pop-up
-                    window.alert("Game Over. Please reload the page to play again.")
-               //Shows number of guesses remaining:
-                } else { 
-
-                    guessCountRemaining.innerHTML = guessesRemaining;  
-                }
-        //Shows letters guessed on screen
-		let guessSport = "";
-            for(let i = 0; i < allLetterGuesses.length; i++) {
-                if(randomSport.indexOf(allLetterGuesses[i]) === -1) {
-                    guessSport += allLetterGuesses[i];
+                //Shows letters guessed on screen
+                let guessSport = "";
+                for(let i = 0; i < allLetterGuesses.length; i++) {
+                    if(randomSport.indexOf(allLetterGuesses[i]) === -1) {
+                        guessSport += allLetterGuesses[i];
+                        // correctLetters++;
+                        }
                     }
+                    lettersGuessed.innerHTML = guessSport;
+                    console.log(guessSport)
                 }
-                lettersGuessed.innerHTML = guessSport;
-             }
-
-        //If guessed correct word, show alert "You Won!"
 
         createSportGuessBoard();
+        winCheck();
+    }
+        console.log(correctLetters)
+	//guessesRemaining = maxGuessAttempts - letterGuessCount;
 
-        let fullSportWord = document.querySelector("#wordInPlay").innerHTML;
-            if (fullSportWord.indexOf("_") === -1) {
-                sportGuessed = true;
-                window.alert("You Won!",confetti());
-                // window.alert("Win! Please reload the page to play again.");
-                // confetti();
+
+//If guessed correct word, show confetti animation"
+function winCheck(){
+    //if(guessesRemaining === 0)
+    if(maxGuessAttempts === 0){
+        //Bring's up pop-up
+        window.alert("Game Over. Please select the Reset Board button to play again.")
+    //Shows number of guesses remaining:
+    } else {
+        guessCountRemaining.innerHTML = maxGuessAttempts;  
+    }
+    let fullSportWord = document.querySelector("#wordInPlay").innerHTML;
+    if (fullSportWord.indexOf("_") === -1) {
+        confetti({
+            particleCount: 300,
+            startVelocity: 25,
+            spread: 360,
+            origin: {
+              x: Math.random(),
+              // since they fall down, start a bit higher than random
+              y: Math.random() - 0.2
+            }
+          });
+        //window.alert("You Won!");
+        // window.alert("Win! Please reload the page to play again.");
         }
-}
-        
-        if(sportGuessed) {
-            // wordInFullAudio.currentTime = 0;
-            // wordInFullAudio.play();
-            sportGuessed= false;
-            randomSport = sportsToGuess[Math.floor(Math.random() * sportsToGuess.length)];
-            createSportGuessBoard();
-        }
+    }
+   
