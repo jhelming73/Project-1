@@ -12,7 +12,7 @@
 		<section id="header">
             <h1>Guess the sport</h1>
             <small>Hangman Edition!</small>
-            <p id="instructions" > Instructions: From the pieces of equipment pictured below, use the missing letters to correctly guess the sport.</p>
+            <p id="instructions" > Instructions: From the pieces of equipment pictured below, use the keyboard to enter in the missing letters to correctly guess the sport.</p>
 			<img id="sports" src="./images/sports.jpg" alt="Sport">
 			<p id="saying"> Work hard, play harder!</p>
         </section>
@@ -20,21 +20,13 @@
             <div id="gameStatus"></div>
             <div id="wordInPlay" class="letters"></div>
             <p>Guesses left: <span id="guessCountRemaining"></span></p>
-            <!-- <div id="guessCountRemaining" class="letters"></div> -->
             <p>Letters Already Guessed:</p>
             <div id="wrongGuess" class="letters"></div>
-            <!-- <input type="reset" value="Reset the form"> -->
             <form id="resetBoard">
                 <input type="button" onclick="resetBoard()" value="Reset Board">
               </form>
         </section>
     </div>
-	<!-- <audio id="wordInFullAudio" preload="true">
-	    <source src=".mp3" type="winningAudio">
-    </audio>
-    <audio id="wrongLetterAudio" preload="true">
-	    <source src=".mp3" type="wrongAudio"> -->
-	</audio>
     <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.3/dist/confetti.browser.min.js"></script>
 </body>

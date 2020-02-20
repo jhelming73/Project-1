@@ -4,7 +4,7 @@
 
 
 ## Instructions how to play:
-From the pieces of equipment pictured, review the number of missing letters to correctly guess the sport in question. Guess correctly, that letter is shown in the correct place on the word in question. Guess incorrectly, then that letter is shown under the "Letters Already Guessed" location. If you are able to guess the sport word in question - watch the confetti fly!
+From the pieces of sport equipment pictured, review the number of missing letters to correctly guess the sport in question. Guess correctly, that letter is shown in the correct place on the word in question. Guess incorrectly, then that letter is shown under the "Letters Already Guessed" location to try another guessed letter. If you are able to guess the sport word in question - watch the confetti fly!
 
 ## Technologies Used in making this game:
 - **Command Line**: used for interacting with the computer, navigating the filesystem.
@@ -30,10 +30,10 @@ The hangman game full-fill's the following requirements:
   very beginning of the project ✔
 
 ### Approach Taken:
- - I decided to go with a hangman version of guessing the of the sport equipment of the shown picture. I first did a wireframe to map out the screen design. I believed the game would be easy by showing a picture of the sport equipment and then show an underscore for the number of letters for the word to guess. As each correct or incorrect word is guess, the guessed letter would appear in the appropriate location. If the user guesses the work incorrectly, they are presented a pop-up alert indicating their game is over. If the user guesses corretly, they get a shower of confetti on the screen! 
+ - I decided to go with a hangman game with a version of guessing the name of the sport equipment in the shown picture. I started out drawing a wireframe to map out the screen design. I believed the game would be easy to understand by showing a picture of the sport equipment and then show an underscore for the number of letters for the word to guess. As each correct or incorrect letter is guessed, the guessed letter would appear in the appropriate location. If the user guesses the work incorrectly and using all guesses remaining they are presented a pop-up alert indicating their game is over. If the user guesses corretly, they get a shower of confetti on the screen! 
 
 ### Unsolved Problems:
-- Pop-up window on "Game Over" alert showing before last letter is populated in word to guess.
+- Pop-up window displaying "Game Over" alert showing before last letter is populated in word to guess.
 
 
 #### Future Plans:
@@ -42,4 +42,4 @@ The hangman game full-fill's the following requirements:
 - Remove pop-up for displaying "Game Over".
 
 Play the game here from the Github repo:
-[Play the game here!](https://jhelming73.github.io/Project-1/)
+[Play now!](https://jhelming73.github.io/Project-1/)

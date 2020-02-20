@@ -1,4 +1,4 @@
-console.log("Running")
+//console.log("Running")
 
 let wordInPlay = document.querySelector('#wordInPlay');
 let wrongLetterAudio = document.querySelector('#wrongLetterAudio')
@@ -54,8 +54,8 @@ document.onkeydown = function(enterLetters) {
 		    } else {
                 correctLetters++
             }
-    console.log(keyPressed)
-    console.log(keyCodePressed)
+    //console.log(keyPressed)
+    //console.log(keyCodePressed)
 
                 //Shows letters guessed on screen
                 let guessSport = "";
