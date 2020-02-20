@@ -9,7 +9,7 @@ From the pieces of sport equipment pictured, review the number of missing letter
 ## Technologies Used in making this game:
 - **Command Line**: used for interacting with the computer, navigating the filesystem.
 - **Source Control**: used for interaction, management and upload changes on code to Git repository
-- **Visual Studio Code**: used for coding with Html, CSS, JQuery and JavaScript
+- **Visual Studio Code**: used for coding with Html, CSS, and JavaScript
 - **Google Chrome Web Browser**: used for launching the website
 - **Google Chrome Developer Tools**: used to debug and solve problems in the code
 
@@ -30,7 +30,7 @@ The hangman game full-fill's the following requirements:
   very beginning of the project ✔
 
 ### Approach Taken:
- - I decided to go with a hangman game with a version of guessing the name of the sport equipment in the shown picture. I started out drawing a wireframe to map out the screen design. I believed the game would be easy to understand by showing a picture of the sport equipment and then show an underscore for the number of letters for the word to guess. As each correct or incorrect letter is guessed, the guessed letter would appear in the appropriate location. If the user guesses the work incorrectly and using all guesses remaining they are presented a pop-up alert indicating their game is over. If the user guesses corretly, they get a shower of confetti on the screen! 
+ - I decided to go with a hangman game with a version of guessing the name of the sport equipment in the shown picture. I started out drawing a wireframe to map out the screen design. I believed the game would be easy to understand by showing a picture of the sport equipment and then show an underscore for the number of letters for the word to guess. As each correct or incorrect letter is guessed, the guessed letter would appear in the appropriate location. If the user guesses the work incorrectly and using all guesses remaining they are presented a pop-up alert indicating their game is over. If the user guesses correctly, they get a shower of confetti on the screen! 
 
 ### Unsolved Problems:
 - Pop-up window displaying "Game Over" alert showing before last letter is populated in word to guess.
@@ -38,7 +38,7 @@ The hangman game full-fill's the following requirements:
 
 #### Future Plans:
 
-- Add winning and loosing scoring logic.
+- Add winning and losing scoring logic.
 - Remove pop-up for displaying "Game Over".
 
 Play the game here from the Github repo:
