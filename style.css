@@ -1,7 +1,7 @@
 body {
     display: flex;
     font-size: 3em;
-	font-family: Arial, Helvetica, sans-serif
+	font-family: Arnoldboecklin, fantasy;
 }
 
 .container {
@@ -18,7 +18,6 @@ body {
 .sports {
 	display: block;
 	height: auto;
-	/* max-width: 80%; */
 	margin: auto;
 	margin-top: 25px;
 }
@@ -37,7 +36,6 @@ body {
 
 small {
 	font-size: 20px;
-	/* text-transform: uppercase; */
 	color: black;
 	letter-spacing: 3px;
 	padding: 10px;
@@ -49,7 +47,6 @@ small {
 	color: white;
 	padding: 60px;
 	font-size: .8em;
-	/* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); */
 }
 
 #wordInPlay {
@@ -60,7 +57,7 @@ small {
 }
  #wrongGuess {
 	font-size: 1.5em;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+	font-family: Lucida, sans-serif;
 }
 
 #gameStatus {
