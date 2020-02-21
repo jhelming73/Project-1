@@ -30,19 +30,13 @@ The hangman game fulfills the following requirements:
 
 - Uses Javascript for DOM manipulation ✔
 
-- Be deployed online, using [Github Project pages](https://pages.github.com)
-
-and/or to a custom domain. ✔
+- Be deployed online, using [Github Project pages](https://pages.github.com) and/or to a custom domain. ✔
 
 - Uses semantic markup for HTML and CSS (adhere to best practices) ✔
 
-- HTML/CSS passes the [HTML5 Validator](https://html5.validator.nu)✔
+- HTML/CSS passes the [HTML5 Validator](https://html5.validator.nu) and [CSS Validator](https://jigsaw.w3.org/css-validator/)✔
 
-and [CSS Validator](https://jigsaw.w3.org/css-validator/)✔
-
-- The git repository hosted on Github with frequent commits dating back to the
-
-very beginning of the project ✔
+- The git repository hosted on Github with frequent commits dating back to the very beginning of the project ✔
 
 ### Approach Taken:
 
