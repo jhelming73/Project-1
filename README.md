@@ -8,7 +8,7 @@ From the pieces of sports equipment pictured, review the number of missing lette
 
 ## Technologies Used in making this game:
 
-- **Command Line**: used for interacting with the computer, navigating the filesystem.
+- **Command Line**: used for interacting with the computer, navigating the filesystem
 
 - **Source Control**: used for interaction, management and upload changes on code to Git repository
 
@@ -30,7 +30,7 @@ The hangman game fulfills the following requirements:
 
 - Uses Javascript for DOM manipulation ✔
 
-- Be deployed online, using [Github Project pages](https://pages.github.com) and/or to a custom domain. ✔
+- Be deployed online, using [Github Project pages](https://pages.github.com) and/or to a custom domain ✔
 
 - Uses semantic markup for HTML and CSS (adhere to best practices) ✔
 
